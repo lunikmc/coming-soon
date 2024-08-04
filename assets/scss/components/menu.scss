@@ -1,0 +1,54 @@
+.global {
+    background-color: #474747;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 750px;
+    padding: 16px 0;
+    margin: 0 auto;
+    color: white;
+    align-items: center;
+
+    @media (max-width: 667px) {
+        max-width: 295px;
+        padding: 10px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 705px;
+        padding: 10px;
+    }
+
+    .logo {
+        a {
+            font-weight: 900;
+            font-size: 28px;
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .button {
+        a {
+            border: solid 1px white;
+            font-weight: 500;
+            border-radius: 20px;
+            padding: 6px 18px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.2s;
+
+            &:hover {
+                border: #5865F2 solid 1px;
+                background-color: #5865F2;
+                color: white;
+            }
+        }
+    }
+}
